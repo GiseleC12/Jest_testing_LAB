@@ -2,17 +2,33 @@ const sum = function(a, b){
     return a + b;
 };
 
-const subtract = null;
+const subtract = function(a, b){
+    return a - b;
+};
 
-const multiply = null;
 
-const divide = null;
+const multiply = function(a, b){
+    return a * b;
+};
 
-const modulus = null;
+const divide = function(a, b){
+    return a/b;
+};
 
-const even = null;
+const modulus = function(a, d){
+   if (d === 0){
+    throw new Error("Modulus operation with divisor 0 is undefined");
+   } 
+   return a % d;
+}
 
-const odd = null;
+const even = function(a){
+    return a % 2 === 0;
+};
+
+const odd = function(b){
+    return b % 2 !==0;
+};
 
 module.exports = { 
     sum, 
